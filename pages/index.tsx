@@ -39,14 +39,14 @@ const UserInfo = () => {
     return (
       <>
         <Link href={Routes.SignupPage()}>
-          <a className="button small">
+
             <strong>Sign Up</strong>
-          </a>
+
         </Link>
         <Link href={Routes.LoginPage()}>
-          <a className="button small">
+
             <strong>Login</strong>
-          </a>
+
         </Link>
       </>
     )
@@ -59,7 +59,7 @@ const Home: BlitzPage = () => {
       <div className="container">
         <main>
           <div className="logo">
-            <Image src={`${logo.src}`} alt="blitzjs" width="256px" height="118px" layout="fixed" />
+            <Image src={`${logo.src}`} alt="blitzjs" width={256} height={118} layout="fixed" />
           </div>
           <p>
             <strong>Congrats!</strong> Your app is ready, including user sign-up and log-in.
@@ -92,7 +92,7 @@ const Home: BlitzPage = () => {
             <p>
               and go to{" "}
               <Link href="/projects">
-                <a>/projects</a>
+                /projects
               </Link>
             </p>
           </div>
